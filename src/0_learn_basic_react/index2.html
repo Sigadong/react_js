@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JSX</title>
+	<script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>
+	<script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script>
+	<!-- Added Babel for the compile new code JS to be code JS version ES5 -->
+	<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+
+<body>
+
+	<div id="root"></div>
+
+	<script type="text/babel">
+		// step 1 : JSX with babel
+		// ReactDOM.render(
+		// 	<h1>Hello, world!</h1>,
+		// 	document.getElementById('root')
+		// );
+
+		// step 2: Nested HTML that JSX
+		// const element = (
+		// 	<div>
+		// 		<h1>Hello, world!</h1>
+		// 		<p>lorem ipsum dolor sit amet!</p>
+		// 	</div>
+		// )
+
+		// ReactDOM.render(
+		// 	element,
+		// 	document.getElementById('root')
+		// );
+
+		// step 3: Add atribute that JSX
+		// const element = (
+		// 	<div id="main">
+		// 		<h1 style={{ color: 'red' }}>
+		// 			Hello, world!
+		// 		</h1>
+		// 		<p className="content">
+		// 			lorem ipsum dolor sit amet!
+		// 		</p>
+		// 		<input type="text" />
+		// 		<button type="button">
+		// 			Signup
+		// 		</button>
+		// 	</div >
+		// )
+
+		// ReactDOM.render(
+		// 	element,
+		// 	document.getElementById('root')
+		// );
+
+		// step 3: Ekspretion Javascript that JSX
+		const firtname = 'Irwanto'
+		const lastname = 'Siregar'
+		const age = 25;
+
+		function signup() {
+			alert('Signup!');
+		}
+
+		const element = (
+			<div id="main">
+				<h1 style={{ color: 'red' }}>
+					Hello, {firtname + ' ' + lastname}
+				</h1>
+				<h3>
+					Age: {age >= 21 && 'Konten Dewasa'}
+				</h3>
+				<p className="content">
+					lorem ipsum dolor sit amet!
+				</p>
+				<input type="text" />
+				<button type="button" onClick={signup}>
+					Signup
+				</button>
+			</div >
+		)
+
+		ReactDOM.render(
+			element,
+			document.getElementById('root')
+		);
+	</script>
+</body>
+
+</html>

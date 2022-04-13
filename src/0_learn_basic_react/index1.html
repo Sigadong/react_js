@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Introduction React JS</title>
+	<script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>
+	<script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script>
+</head>
+<body>
+	
+	<div id="root"></div>
+
+	<script>
+			<!-- Step 1 -->
+	// ReactDOM.render(
+	// 	'Hello World!',
+	// 	document.getElementById('root')
+	// )
+
+			<!-- Step 2 -->
+	// ReactDOM.render(
+	// 	React.createElement(
+	// 	'h1', {}, 'Hello World!'
+	// 	),
+	// 	document.getElementById('root')
+	// )			
+
+			<!-- Step 3 -->
+	// ReactDOM.render(
+	// 	React.createElement(
+	// 	'h1',
+	// 	{
+	// 		style: {color: 'red'}
+	// 	},
+	// 	'Hello World!'
+	// 	),
+	// 	document.getElementById('root')
+	// )	
+
+			<!-- Step 4 -->
+	const cE = React.createElement;
+
+	ReactDOM.render(
+		cE(
+			'div',
+			{},		
+			cE(
+				'h1',
+				{ style: {color: 'red'}},
+				'Hello World!'
+			),
+			cE(
+				'p',
+				{},
+				'lorem ipsum dolor sit amet!'
+			),
+		),
+		document.getElementById('root')
+	)
+	</script>
+</body>
+</html>
