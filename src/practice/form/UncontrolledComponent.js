@@ -9,7 +9,7 @@ const UnControlled = () => {
     // kirim data form
     alert(inputName.current.value)
     // File API untuk dapat nama file
-    alert(inputPhoto.current.file[0].value)
+    alert(inputPhoto.current.file[0].value)dvsadvsd
   }
 
   return <form onSubmit={handleSubmit}>

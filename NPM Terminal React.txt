@@ -1,0 +1,26 @@
+# Install Projek Aplikasi
+npx create-react-app my-app
+
+# Install pustaka Router
+npm install react-router-dom
+
+
+## Memulai Proyek React App ##
+
+IRWAN@DESKTOP-PUC61V7 MINGW64 ~/Desktop/REACT JS
+$ cd grid-app
+
+IRWAN@DESKTOP-PUC61V7 MINGW64 ~/Desktop/REACT JS/grid-app (master)
+$ cd src
+
+IRWAN@DESKTOP-PUC61V7 MINGW64 ~/Desktop/REACT JS/grid-app/src (master)
+$ mkdir components app features
+
+IRWAN@DESKTOP-PUC61V7 MINGW64 ~/Desktop/REACT JS/grid-app/src (master)
+$ touch app/store.js
+
+IRWAN@DESKTOP-PUC61V7 MINGW64 ~/Desktop/REACT JS/grid-app/src (master)
+$ mkdir features/Grid
+
+IRWAN@DESKTOP-PUC61V7 MINGW64 ~/Desktop/REACT JS/grid-app/src (master)
+$ touch features/Grid/reducer.js
